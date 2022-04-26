@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 var TableSchema = new Schema({
     name: { type: String, required: true, max: 100 },
     desc: { type: String, required: true },
-    image: {type: String},
+    image: {type: String, default: null},
     occupied: {type: Boolean, default: false},
     numberOfSeats: { type: String, max: 100 },
     cafeId: {
