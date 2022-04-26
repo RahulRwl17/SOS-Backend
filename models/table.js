@@ -9,7 +9,7 @@ var TableSchema = new Schema({
     numberOfSeats: { type: String, max: 100 },
     cafeId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'cafeUsers',
+        ref: 'TempCafe',
     }
 });
 
