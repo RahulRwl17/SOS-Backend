@@ -6,7 +6,8 @@ exports.table_create = function(req , res){
     const { decoded } = req;
     var tableData = {
         ...req.body,
-        addedBy: decoded.id
+        addedBy: decoded.id,
+        cafeId: decoded.cafeId
     }
     if(decoded.role == "cafeadmin")
     {
